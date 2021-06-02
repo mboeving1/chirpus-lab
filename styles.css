@@ -1,0 +1,126 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafc;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-end;
+  font-size: 1em;
+  
+}
+li a {
+  text-decoration: none;
+  color: #69696a;
+  padding-left:10px;
+}
+li p{
+    padding:0px;
+}
+
+p {
+  color: #69696a;
+  font-size: 20px;
+}
+.paragraph {
+  border-left: solid 5px gray;
+  font-size: 1em;
+  padding-left: 10px;
+}
+button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  width: 747px;
+}
+
+footer {
+  background: rgba(247, 193, 162, 0.7);
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+}
+
+.footer-link {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:10px;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+
+  color: #69696a;
+}
+.circleBase {
+  border-radius: 50%;
+}
+.type1 {
+  width: 200px;
+  height: 200px;
+  background: rgba(247, 136, 167, 0.6);
+  margin-top: -332px;
+  margin-right: 61px;
+}
+.type2 {
+  width: 150px;
+  height: 150px;
+  background: rgba(247, 193, 162, 0.7);
+  margin-top: -193px;
+  margin-right: 9px;
+}
+.type3 {
+  width: 100px;
+  height: 100px;
+  background: rgba(207, 130, 213, 0.6);
+  margin-top: -263px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  div.circleBase {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    font-size: 1vm;
+    width: 50%;
+  }
+  button {
+    width: 50%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    width:auto;
+  }
+  li a {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  div.circleBase {
+    display: flex;
+    align-items: center;
+    float: right;
+  }
+  
+ 
+}
